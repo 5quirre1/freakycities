@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>squirrel freakaycitie</title>
+    <style>body{color:#ccc;background-color:#121212;font-family:Arial,sans-serif;margin:2em}h2{color:#fc0}ul{list-style-type:square}b{color:#ff69b4}</style>
+</head>
+<body>
+    <p>welcome to my very <b>swag</b> website</p>
+    <h2>my fav things</h2>
+    <ul>
+        <li>seals</li>
+        <li>cute bunnies</li>
+        <li>pizza</li>
+    </ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let title = "squirrel freakaycitie ";
+            let scrollTitle = title;
+
+            function scroll() {
+                scrollTitle = scrollTitle.substring(1) + scrollTitle[0];
+                document.title = scrollTitle;
+            }
+
+            setInterval(scroll, 200);
+        });
+    </script>
+</body>
+</html>
